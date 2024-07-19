@@ -1,0 +1,8 @@
+<meta name="description" content="<%= description %>">
+<meta property="og:title" content="<%= title %>">
+<meta property="og:description" content="<%= description %>">
+<meta property="og:type" content="website">
+<% if (locals.url) { %>
+  <meta property="og:url" content="<%= url %>">
+  <link rel="canonical" href="<%= url %>" />
+<% } %>

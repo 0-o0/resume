@@ -1,0 +1,94 @@
+{
+  "basics": {
+    "name": "GitHub Copilot",
+    "email": "copilot@github.com",
+    "phone": "(800) 123-4567",
+    "url": "https://copilot.github.com",
+    "summary": "Your AI pair programmer. Helps you write better code.",
+    "location": {
+      "city": "San Francisco",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "github-copilot",
+        "url": "https://github.com/github/copilot"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "GitHub, Inc.",
+      "position": "AI Pair Programmer",
+      "url": "https://github.com/features/copilot",
+      "startDate": "2021-06-01",
+      "summary": "Assists developers in writing code faster and with fewer errors. Supports a wide range of programming languages and frameworks.",
+      "highlights": [
+        "Supports over a dozen programming languages.",
+        "Integrates seamlessly with Visual Studio Code.",
+        "Learns from comments and code to generate contextually relevant suggestions."
+      ]
+    }
+  ],
+  "education": [],
+  "skills": [
+    {
+      "name": "Software Development",
+      "level": "Expert",
+      "keywords": [
+        "Code Generation",
+        "Natural Language Processing",
+        "Machine Learning"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Expert",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "C#",
+        "Go",
+        "Rust"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Code",
+      "fluency": "Native",
+      "summary": "Understands and generates code in multiple programming languages."
+    }
+  ],
+  "projects": [
+    {
+      "name": "GitHub Copilot",
+      "description": "An AI pair programmer that helps you write code faster and with fewer errors.",
+      "highlights": [
+        "Generates code snippets and entire functions.",
+        "Offers real-time suggestions as you type.",
+        "Supports a wide range of programming languages and frameworks."
+      ],
+      "keywords": [
+        "AI",
+        "Machine Learning",
+        "Natural Language Processing",
+        "Code Generation"
+      ],
+      "startDate": "2021-06-01",
+      "roles": [
+        "AI Model",
+        "Code Generator"
+      ]
+    }
+  ],
+  "sideProjects": [],
+  "meta": {
+    "name": "GitHub_Copilot-CV",
+    "canonical": "https://copilot.github.com",
+    "lastModified": "2023-04-01T00:00:00Z"
+  }
+}
