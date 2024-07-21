@@ -17,6 +17,34 @@ function hasItems(arr) {
   return false
 }
 %>
+<script type="module">
+  import webGLFluidEnhanced from 'https://unpkg.com/webgl-fluid-enhanced@0.5.2/dist/webgl-fluid-enhanced.mjs';
+
+  const simulation = webGLFluidEnhanced.simulation(document.querySelector('canvas'), {
+    COLOR_PALETTE: ['#4685FF', '#F2F2F2', '#FFB084'],
+    HOVER: true,
+    SPLAT_KEY: 'Space',
+    BRIGHTNESS: 0.4,
+    BACK_COLOR: '#FFFFFF',
+    BLOOM: true,
+  });
+
+  function addMouseEventListeners() {
+    const canvas = document.querySelector('canvas');
+    const mouseEvents = ['click', 'mousedown', 'mouseup', 'mousemove', 'mouseenter', 'mouseleave', 'mouseover', 'mouseout'];
+    mouseEvents.forEach(eventType => {
+      document.addEventListener(eventType, (event) => {
+        if (event.target !== canvas) {
+          const clonedEvent = new MouseEvent(event.type, event);
+          canvas.dispatchEvent(clonedEvent);
+        }
+      });
+    });
+  }
+
+  addMouseEventListeners();
+</script>
+<canvas style="position:fixed; top:0; left:0; width:100vw; height: 100vh; z-index: -1;"></canvas>
 
 <!-- Basics -->
 <section class="basics-section">
