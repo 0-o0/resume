@@ -52,6 +52,11 @@ function hasItems(arr) {
   <% if (cv.basics.label) { %>
     <div class="label row subtitle"><%= cv.basics.label %></div>
   <% } %>
+  <% if (cv.basics.avatar) { %>
+    <div class="avatar">
+      <img src="<%= cv.basics.avatar %>" alt="" />
+    </div>
+  <% } %>
   <% if (cv.basics.url) { %>
     <div class="url row">
       <%- fn.getIconSVG('mdi:link-variant') %>

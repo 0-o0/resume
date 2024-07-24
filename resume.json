@@ -9,6 +9,7 @@
       "city": "San Francisco",
       "countryCode": "US"
     },
+    "avatar": "",
     "profiles": [
       {
         "network": "GitHub",
@@ -79,15 +80,12 @@
         "Code Generation"
       ],
       "startDate": "2021-06-01",
-      "roles": [
-        "AI Model",
-        "Code Generator"
-      ]
+      "roles": ["AI Model", "Code Generator"]
     }
   ],
   "sideProjects": [],
   "meta": {
-    "name": "GitHub_Copilot-CV",
+    "name": "GitHub_Copilot",
     "canonical": "https://copilot.github.com",
     "lastModified": "2023-04-01T00:00:00Z"
   }

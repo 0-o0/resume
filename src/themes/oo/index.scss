@@ -166,6 +166,21 @@ section {
     font-weight: 600;
     margin: .2em 0 .2em 0;
   }
+  .avatar {
+    position: absolute;
+    top: 75px;
+    right: 420px;
+    width: 120px;
+    height: auto; 
+    max-width: 100%;
+    overflow: hidden; 
+    aspect-ratio: 293 / 495;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
   .contact {
     color: $color-text-dim;
     display: flex;
