@@ -90,22 +90,27 @@ function hasItems(arr) {
 
 
 <%
-function dateRange(item, level) {
+function dateRange(item, level, locale = 'en-US') {
   let {startDate, endDate} = item
   if (!startDate && !endDate) return ''
   let format
   // level: 1: year, 2: month, 3: day
   switch (level) {
     case 1:
-      format = 'YYYY'
+      format = { year: 'numeric' }
       break;
     case 2:
-      format = 'MMM YYYY'
+      format = { year: 'numeric', month: 'short' }
+      break;
+    case 3:
+      format = { year: 'numeric', month: 'short', day: 'numeric' }
       break;
   }
+  // date format
+  const formatter = new Intl.DateTimeFormat(locale, format)
   if (format) {
-    startDate = startDate ? fn.reformatDate(startDate, format) : ''
-    endDate = endDate ? fn.reformatDate(endDate, format) : ''
+    startDate = startDate ? formatter.format(new Date(startDate)) : ''
+    endDate = endDate ? formatter.format(new Date(endDate)) : ''
   }
   let result = ''
   if (startDate && endDate) {
@@ -113,7 +118,7 @@ function dateRange(item, level) {
   } else if (startDate) {
     result = `${startDate} – Present`
   } else if (endDate) {
-    result = `Until ${endDate}`
+    result = `Util ${endDate}`
   }
   return `<div class="date-range">${result}</div>`
 }
